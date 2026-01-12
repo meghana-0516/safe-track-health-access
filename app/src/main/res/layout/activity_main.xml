@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Hero Image with Parallax Effect -->
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tourism_background"
+        />
+
+    <!-- Gradient Overlay with Animated Glow -->
+    <View
+        android:id="@+id/gradientOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <!-- App Title with Animation -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="ResQpath"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:elevation="4dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Decorative Line -->
+    <View
+        android:id="@+id/decorativeLine"
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- Text Card Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textCardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exploreButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:alpha="0.95">
+
+        <LinearLayout
+            android:id="@+id/textCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E02C69"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Welcome Text with Typewriter Effect -->
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="bold"
+                android:text="welcome"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/subtitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:fontFamily="bold"
+                android:text="Your Travelling Buddy"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Floating Explore Button with Bounce Effect -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/exploreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="explore"
+        app:icon="@drawable/app_logo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#DE2162"
+        app:cornerRadius="24dp"
+        app:elevation="10dp" />
+
+    <!-- Location Icons with Animation -->
+    <ImageView
+        android:id="@+id/locationIcon1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/ic_hospital"
+        android:alpha="0.8"
+        />
+
+    <ImageView
+        android:id="@+id/locationIcon2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="160dp"
+        android:src="@drawable/ic_help"
+        android:alpha="0.6"
+         />
+</RelativeLayout>

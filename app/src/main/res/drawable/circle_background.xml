@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#B44F71"/> <!-- Change color as needed -->
+
+    <size
+        android:width="200dp"
+        android:height="200dp"/> <!-- Define square size -->
+
+    <corners android:radius="0dp"/> <!-- No rounded corners for a perfect square -->
+
+</shape>

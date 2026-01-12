@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499637545343",
+    "project_id": "resqpath-90dbf",
+    "storage_bucket": "resqpath-90dbf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499637545343:android:362260eeec1e48387ed24a",
+        "android_client_info": {
+          "package_name": "com.example.exploresafely"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmtn4bJRnuMQruUtsNDVd0xSfOVipKviQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
